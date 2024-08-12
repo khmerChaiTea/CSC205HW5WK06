@@ -10,21 +10,14 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // Building a Mad Lib
-            string color, pluralNoun, celebrity;
+            // Arrays
+            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };  // Need to be of the same type
+            string[] friends = new string[5];  // How many array it can hold
+            friends[0] = "Jim";
+            friends[1] = "Kelley";
+            friends[2] = "Tom";
 
-            Console.Write("Enter a color: ");
-            color = Console.ReadLine();
-
-            Console.Write("Enter a plural noun: ");
-            pluralNoun = Console.ReadLine();
-
-            Console.Write("Enter a celebrity: ");
-            celebrity = Console.ReadLine();
-
-            Console.WriteLine("Roses are " + color);
-            Console.WriteLine(pluralNoun + " are blue");
-            Console.WriteLine("I Love " + celebrity);
+            Console.WriteLine(luckyNumbers[1]);
 
             Console.ReadLine();
         }
