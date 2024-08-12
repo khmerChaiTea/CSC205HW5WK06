@@ -10,6 +10,9 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World!");
+
+            Console.ReadLine();
         }
     }
 }
