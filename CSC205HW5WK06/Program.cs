@@ -10,16 +10,13 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // Data Type and variables
-            string phrase = "Code Academy";
-            char grade = 'A';   // Can only put one character
-            int age = 30;
-            double gpa = 3.2;
-            bool isMale = true;    // True or false
-
-            Console.WriteLine("Hello"); // Constant
-            Console.WriteLine(30);
-            Console.WriteLine(false);
+            // Working with string
+            string phrase = "FreeCodeCamp Academy";
+            Console.WriteLine(phrase[13]);   // Put the index of the string, start with 0
+            Console.WriteLine(phrase.IndexOf("Academy"));   // Give the starting index of the word
+            Console.WriteLine(phrase.IndexOf('z')); // Output -1 because it is not existed
+            Console.WriteLine(phrase.Substring(13));
+            Console.WriteLine(phrase.Substring(13, 3));    // Gab only three characters
 
             Console.ReadLine();
         }
