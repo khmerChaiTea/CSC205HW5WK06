@@ -10,10 +10,13 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("There once was a man named John");
+            string characterName = "John";
+            int characterAge;
+            characterAge = 35;
+            Console.WriteLine("There once was a man named " + characterName);
             Console.WriteLine("He was 35 years old");
-            Console.WriteLine("He really liked the name George");
-            Console.WriteLine("But didn't like being 35");
+            Console.WriteLine("He really liked the name " + characterName);
+            Console.WriteLine("But didn't like being " + characterAge);
 
             Console.ReadLine();
         }
