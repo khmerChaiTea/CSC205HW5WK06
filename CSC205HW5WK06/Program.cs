@@ -10,16 +10,17 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // Arrays
-            int[] luckyNumbers = { 4, 8, 15, 16, 23, 42 };  // Need to be of the same type
-            string[] friends = new string[5];  // How many array it can hold
-            friends[0] = "Jim";
-            friends[1] = "Kelley";
-            friends[2] = "Tom";
-
-            Console.WriteLine(luckyNumbers[1]);
+            // Methods
+            SayHi("Mike", 33);
+            SayHi("John", 56);
+            SayHi("Tom", 12);
 
             Console.ReadLine();
+        }
+
+        static void SayHi(string name, int age)
+        {
+            Console.WriteLine("Hello " + name + " you are " + age);
         }
     }
 }
