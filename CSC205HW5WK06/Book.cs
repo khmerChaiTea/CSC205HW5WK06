@@ -12,5 +12,12 @@ namespace CSC205HW5WK06
         public string title;
         public string author;
         public int pages;
+
+        public Book(string aTitle,string aAuthor,int aPages)   // Constructors a special method to call the class
+        {
+            title = aTitle; // Similar to book1.title
+            author = aAuthor;
+            pages = aPages;
+        }
     }
 }

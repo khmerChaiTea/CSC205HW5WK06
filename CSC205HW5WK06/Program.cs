@@ -11,16 +11,9 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // Classes & Objects
-            Book book1 = new Book();
-            book1.title = "Harry Potter";
-            book1.author = "JK Rowling";
-            book1.pages = 400;  // Instance of the book class
-
-            Book book2 = new Book();
-            book2.title = "Lord of the Rings";
-            book2.author = "Tolkein";
-            book2.pages = 700;  // Instance of the book class
+            // Constructors
+            Book book1 = new Book("Harry Potter", "JK Rowling", 400);  // Called the constructor
+            Book book2 = new Book("Lord of the Rings", "Tolkein", 700);
 
             Console.WriteLine(book1.title);
             Console.WriteLine(book1.author);
