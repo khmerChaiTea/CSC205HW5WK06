@@ -11,16 +11,31 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // 2d Arrays
-            int[,] numberGrid = {
-                { 1, 2 },
-                { 3, 4 },
-                { 5, 6 }
-            };
-            int[,] myArray = new int[2, 3];
+            // Exception Handling
+            try
+            {
+                Console.Write("Enter a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter another number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(numberGrid[1,1]);
-            Console.WriteLine(numberGrid[2, 1]);
+                Console.WriteLine(num1 / num2);
+            }
+            catch (DivideByZeroException e) // Specific exception is the better to code
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            //finally // Always going to get executed
+            //{
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //}
 
             Console.ReadLine();
         }
