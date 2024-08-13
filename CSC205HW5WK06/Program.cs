@@ -11,43 +11,38 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // If Statement (con't)
-            Console.WriteLine(GetMax(20, 10, 40));
+            // Building a Better Calculator
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.ReadLine();
-        }
+            Console.Write("Enter Operator: ");
+            string op = Console.ReadLine();
 
-        static int GetMax(int num1, int num2, int num3)
-        {
-            int result;
-            if (num1 >= num2 && num1 >= num3)
+            Console.Write("Enter another number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            if (op == "+")
             {
-                result = num1;
+                Console.WriteLine(num1 + num2);
             }
-            else if (num2 >= num1 && (num2 >= num3))
+            else if (op == "-")
             {
-                result = num2;
+                Console.WriteLine(num1 - num2);
+            }
+            else if (op == "/")
+            {
+                Console.WriteLine(num1 / num2);
+            }
+            else if (op == "*")
+            {
+                Console.WriteLine(num1 * num2);
             }
             else
             {
-                result = num3;
+                Console.WriteLine("Invalid Operator");
             }
 
-            return result;
+            Console.ReadLine();
         }
     }
 }
-///sumary///
-/// I wake up
-/// If I'm hungry
-///     I eat breakfast
-///     
-/// I look at my phone
-/// if it's about to die
-///     I charge it
-///     
-/// I leave my house
-/// if it;s cloudy
-///     i bring an unbrella
-/// otherwise
-///     I bring sunglasses
