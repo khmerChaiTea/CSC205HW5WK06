@@ -11,19 +11,12 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // Constructors
-            Book book1 = new Book("Harry Potter", "JK Rowling", 400);  // Called the constructor
-            Book book2 = new Book("Lord of the Rings", "Tolkein", 700);
+            // Object Methods
+            Student student1 = new Student("Jim", "Business", 3.1);
+            Student student2 = new Student("Pam", "Art", 3.6);
 
-            Console.WriteLine(book1.title);
-            Console.WriteLine(book1.author);
-            Console.WriteLine(book1.pages);
-
-            Console.WriteLine();
-
-            Console.WriteLine(book2.title);
-            Console.WriteLine(book2.author);
-            Console.WriteLine(book2.pages);
+            Console.WriteLine(student1.HasHonors());
+            Console.WriteLine(student2.HasHonors());
 
             Console.ReadLine();
         }
