@@ -11,19 +11,34 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // While loop
-            int index = 6;
+            // Building a Guessing Game
+            string secretWord = "giraffe";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
+
             do
             {
-                Console.WriteLine(index);
-                index++;
-            } while (index <= 5);
-
-            //while (index <= 5)
-            //{
-            //    Console.WriteLine(index);
-            //    index++;
-            //}
+                if (guessCount < guessLimit)
+                {
+                    Console.WriteLine("Enter guess: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                }
+                else
+                {
+                    outOfGuesses = true;
+                }
+            } while (guess != secretWord && !outOfGuesses);
+            if (outOfGuesses)
+            {
+                Console.WriteLine("You Lose!");
+            }
+            else
+            {
+                Console.WriteLine("You Win!");
+            }
 
             Console.ReadLine();
         }
