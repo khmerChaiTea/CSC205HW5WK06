@@ -11,12 +11,20 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // Object Methods
-            Student student1 = new Student("Jim", "Business", 3.1);
-            Student student2 = new Student("Pam", "Art", 3.6);
+            // Getters & Setters
+            Movie avengers = new Movie("The Avengers", "Joss Whedon", "dog");
+            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
+            // G, PG, PG-13, R, NR
 
-            Console.WriteLine(student1.HasHonors());
-            Console.WriteLine(student2.HasHonors());
+            Console.WriteLine(avengers.title);
+            Console.WriteLine(avengers.director);
+            Console.WriteLine(avengers.Rating);
+
+            Console.WriteLine();
+
+            Console.WriteLine(shrek.title);
+            Console.WriteLine(shrek.director);
+            Console.WriteLine(shrek.Rating);
 
             Console.ReadLine();
         }
