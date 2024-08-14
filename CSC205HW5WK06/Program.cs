@@ -11,12 +11,20 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // Static Methods & Classes
-            //Math maths = new Math();  // Class is static -- error
-            Console.WriteLine(Math.Sqrt(144));  // An example of static method
+            // Inheritance
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeChicken();
+            italianChef.MakeSalad();
+            italianChef.MakeSpecialDish();
+            italianChef.MakePasta();    // Only the subclass can call MakePasta()
 
-            UsefulTools tools = new UsefulTools();  // Class is not static
-            UsefulTools.SayHi("Prem");
+            Console.WriteLine();
+
+            // Chef the "Super class"
+            Chef chef = new Chef();
+            chef.MakeChicken();
+            chef.MakeSalad();
+            chef.MakeSpecialDish();
 
             Console.ReadLine();
         }
