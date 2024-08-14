@@ -11,21 +11,12 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // Static Class Attributes
-            Song holiday = new Song("Holiday", "Green Day", 200);
-            Console.WriteLine(Song.songCount);  // Belong to the class -- attribute about the class not the specific object
-            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
-            Console.WriteLine(Song.songCount);
+            // Static Methods & Classes
+            //Math maths = new Math();  // Class is static -- error
+            Console.WriteLine(Math.Sqrt(144));  // An example of static method
 
-            Console.WriteLine(kashmir.getSongCount());
-
-            Console.WriteLine(holiday.title);
-            Console.WriteLine(holiday.artist);
-            Console.WriteLine(holiday.duration);
-
-            Console.WriteLine(kashmir.title);
-            Console.WriteLine(kashmir.artist);
-            Console.WriteLine(kashmir.duration);
+            UsefulTools tools = new UsefulTools();  // Class is not static
+            UsefulTools.SayHi("Prem");
 
             Console.ReadLine();
         }
