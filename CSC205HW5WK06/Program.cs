@@ -11,20 +11,21 @@ namespace CSC205HW5WK06
     {
         static void Main(string[] args)
         {
-            // Getters & Setters
-            Movie avengers = new Movie("The Avengers", "Joss Whedon", "dog");
-            Movie shrek = new Movie("Shrek", "Adam Adamson", "PG");
-            // G, PG, PG-13, R, NR
+            // Static Class Attributes
+            Song holiday = new Song("Holiday", "Green Day", 200);
+            Console.WriteLine(Song.songCount);  // Belong to the class -- attribute about the class not the specific object
+            Song kashmir = new Song("Kashmir", "Led Zeppelin", 150);
+            Console.WriteLine(Song.songCount);
 
-            Console.WriteLine(avengers.title);
-            Console.WriteLine(avengers.director);
-            Console.WriteLine(avengers.Rating);
+            Console.WriteLine(kashmir.getSongCount());
 
-            Console.WriteLine();
+            Console.WriteLine(holiday.title);
+            Console.WriteLine(holiday.artist);
+            Console.WriteLine(holiday.duration);
 
-            Console.WriteLine(shrek.title);
-            Console.WriteLine(shrek.director);
-            Console.WriteLine(shrek.Rating);
+            Console.WriteLine(kashmir.title);
+            Console.WriteLine(kashmir.artist);
+            Console.WriteLine(kashmir.duration);
 
             Console.ReadLine();
         }
